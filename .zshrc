@@ -24,16 +24,17 @@ DISABLE_AUTO_UPDATE="true"
 
 
 # Setup variables
-export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/local/bin:/usr/local/bin:$PATH"
 export EDITOR="vim"
 export PYTHON="python2"
 
 if [ -f "$HOME/.nvm/nvm.sh" ]; then
-    . ~/.nvm/nvm.sh
+    source ~/.nvm/nvm.sh
+    export PATH="`npm bin`:$PATH"
 fi
 
 if [ -f "$HOME/.localrc" ]; then
-    . ~/.localrc
+    source ~/.localrc
 fi
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
