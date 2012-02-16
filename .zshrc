@@ -22,6 +22,20 @@ DISABLE_AUTO_UPDATE="true"
 # Uncomment following line if you want disable red dots displayed while waiting for completion
 # DISABLE_COMPLETION_WAITING_DOTS="true"
 
+
+# Setup variables
+export PATH="/usr/local/bin:$PATH"
+export EDITOR="vim"
+export PYTHON="python2"
+
+if [ -f "$HOME/.nvm/nvm.sh" ]; then
+    . ~/.nvm/nvm.sh
+fi
+
+if [ -f "$HOME/.localrc" ]; then
+    . ~/.localrc
+fi
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git django deb node npm pip redis-cli)
@@ -32,11 +46,3 @@ source $ZSH/oh-my-zsh.sh
 zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
-
-export PATH="/usr/local/bin:$PATH"
-export EDITOR="vim"
-
-. ~/.nvm/nvm.sh
-nvm use 0.6 >/dev/null
-. ~/.localrc
-. ~/.nvm/nvm.sh

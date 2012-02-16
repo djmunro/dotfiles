@@ -1,16 +1,9 @@
-
 export PATH="$HOME/local/bin:$PATH"
 
-#export EDITOR=vim
-#export PATH="/home/munro/scripts/:/home/munro/local/bin/:/var/lib/gems/1.8/bin/:$PATH"
-#export PATH="`npm bin`:/home/munro/local/bin:$PATH"
-#source ~/.sshalias
+#export PATH="`npm bin`:$HOME/local/bin:$PATH"
 
 #export GREP_OPTIONS='--color=auto'
-#alias envcrm='source /home/munro/env/crm/bin/activate'
 #xmodmap -e "remove lock = Caps_Lock"
-#php /home/munro/.food.php
-#alias su='su --login root'
 
 export WORKON_HOME=$HOME/Envs
 export PIP_REQUIRE_VIRTUALENV=true
