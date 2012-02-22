@@ -58,7 +58,7 @@ XTerm*color15: ghostwhite
 
 ! Urxvt class
 URxvt.font: xft:Ubuntu Mono-11
-URxvt*fading: 50
+! URxvt*fading: 50
 URxvt*scrollBar: true
 URxvt*scrollstyle: plain
 URxvt*scrollBar_floating: true

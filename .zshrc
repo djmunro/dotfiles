@@ -26,7 +26,12 @@ DISABLE_AUTO_UPDATE="true"
 # Setup variables
 export PATH="$HOME/local/bin:/usr/local/bin:$PATH"
 export EDITOR="vim"
-export PYTHON="python2"
+
+# Things not quite ready for the year 3000:
+# * Node.js
+if [ -f "`which python2`" ]; then
+    export PYTHON="python2"
+fi
 
 if [ -f "$HOME/.nvm/nvm.sh" ]; then
     source ~/.nvm/nvm.sh
@@ -37,9 +42,15 @@ if [ -f "$HOME/.localrc" ]; then
     source ~/.localrc
 fi
 
+
+# Change font size
+setfontsize () {
+    printf '\e]710;%s%s\007' "xft:Ubuntu Mono-" $1
+}
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git django deb node npm pip redis-cli)
+plugins=(git django deb node npm pip redis-cli nyan)
 
 source $ZSH/oh-my-zsh.sh
 

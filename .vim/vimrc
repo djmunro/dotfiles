@@ -53,8 +53,17 @@ filetype plugin on
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+set smarttab
 set expandtab
 set cc=81
+
+set shiftround
+set autoindent
+
+set incsearch
+set ignorecase
+
+set dir=$HOME/.vim/tmp
 
 " Let upper case write/quit commands work
 com! Q q
@@ -148,6 +157,7 @@ au Bufread,BufNewFile *.go set filetype=go
 au Bufread,BufNewFile *.less set filetype=less
 au Bufread,BufNewFile *.php.tpl set filetype=php
 au Bufread,BufNewFile *.lang set filetype=lang
+au Bufread,BufNewFile *.m set filetype=objc
 syntax on
 
 
