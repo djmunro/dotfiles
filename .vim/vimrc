@@ -157,6 +157,7 @@ au Bufread,BufNewFile *.go set filetype=go
 au Bufread,BufNewFile *.less set filetype=less
 au Bufread,BufNewFile *.php.tpl set filetype=php
 au Bufread,BufNewFile *.lang set filetype=lang
+au Bufread,BufNewFile *.m set filetype=objc
 syntax on
 
 
