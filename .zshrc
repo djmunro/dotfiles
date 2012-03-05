@@ -27,6 +27,17 @@ DISABLE_AUTO_UPDATE="true"
 export PATH="$HOME/local/bin:/usr/local/bin:$PATH"
 export EDITOR="vim"
 
+# Git variables
+export GIT_AUTHOR_NAME="Munro"
+export GIT_AUTHOR_EMAIL="munro.github@gmail.com"
+export GIT_COMMITTER_NAME="Munro"
+export GIT_COMMITTER_EMAIL="munro.github@gmail.com"
+
+# Hg varialbes
+export HGUSER="Munro"
+export EMAIL="munro.github@gmail.com"
+
+
 # Things not quite ready for the year 3000:
 # * Node.js
 if [ -f "`which python2`" ]; then
