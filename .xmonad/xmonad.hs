@@ -16,6 +16,7 @@ import qualified XMonad.StackSet as W
 myManageHook  = composeAll [ resource =? "gitk"  --> doF (W.swapMaster)
                            , resource =? "meld"  --> doF (W.swapMaster)
                            , resource =? "gitg"  --> doF (W.swapMaster)
+                           , resource =? "hgk"  --> doF (W.swapMaster)
                            ]
 newManageHook = myManageHook <+> manageDocks <+> manageHook defaultConfig
 
