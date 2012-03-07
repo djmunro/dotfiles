@@ -109,6 +109,8 @@ set guioptions-=L
 " colors
 set t_Co=256
 colorscheme candycode2
+set bg=light
+set bg=dark
 "colorscheme ohess
 "hi LineNr ctermfg=darkcyan ctermbg=black
 

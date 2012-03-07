@@ -61,7 +61,7 @@ setfontsize () {
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git django deb node npm pip redis-cli nyan)
+plugins=(git django deb node npm pip redis-cli nyan mercurial)
 
 source $ZSH/oh-my-zsh.sh
 

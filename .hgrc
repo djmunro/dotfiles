@@ -1,19 +1,20 @@
 [ui]
-verbose=True
+verbose = True
 
 [pager]
-pager=LESS='FSRX' less
+pager = LESS='FSRX' less
 
 [extensions]
-color=
-graphlog=
-hgext.fetch=
-hgext.record=
-#hggit=
-hgk=
-mq=
-pager=
-progress=
-rebase=
-record=
-transplant=
+color =
+graphlog =
+hgext.fetch =
+hgext.record =
+hgk =
+hgshelve = ~/.hgext/hgshelve.py
+histedit = ~/.hgext/hg_histedit.py
+mq =
+pager =
+progress =
+rebase =
+record =
+transplant =
