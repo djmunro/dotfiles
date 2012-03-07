@@ -35,7 +35,17 @@ else
     ICON="➜ "
 fi
 
-PROMPT='%{$fg_bold[magenta]%}$ICON%n %{$fg[yellow]%}%~ $(git_prompt_info)
+function scm_prompt_info() {
+    HG=$(hg_prompt_info)
+    if [ -n "$HG" ]
+    then
+        echo $HG
+    else
+        echo "$(git_prompt_info)"
+    fi
+}
+
+PROMPT='%{$fg_bold[magenta]%}$ICON%n %{$fg[yellow]%}%~ $(scm_prompt_info)
 %{$fg_bold[magenta]%}$ICON%{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[red]%}"
