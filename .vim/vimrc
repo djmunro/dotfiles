@@ -16,7 +16,7 @@ set timeout timeoutlen=3000 ttimeoutlen=100
 set history=200
 set number
 set notitle
-set foldlevel=999
+set nofoldenable
 set novb
 set mouse=a
 
@@ -140,6 +140,7 @@ Bundle 'snipMate'
 Bundle "Command-T"
 Bundle 'fugitive.vim'
 Bundle 'reload.vim'
+Bundle 'Gist.vim'
 "Bundle 'Markdown'
 "Bundle 'Markdown-syntax'
 "Bundle 'Syntastic'
@@ -147,6 +148,8 @@ Bundle 'reload.vim'
 
 " Snipmate
 let g:snips_author = 'Ryan Munro'
+let g:github_user = 'munro'
+let g:github_token = $GITHUB_TOKEN
 
 " Syntax detection
 au BufRead,BufNewFile *.cpp set syntax=cpp11
