@@ -1,5 +1,6 @@
 [ui]
 verbose = True
+merge = meld
 
 [pager]
 pager = LESS='FSRX' less
@@ -18,3 +19,6 @@ progress =
 rebase =
 record =
 transplant =
+
+[merge-tools]
+meld.args = $base $local $other
