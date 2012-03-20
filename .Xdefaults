@@ -33,7 +33,7 @@ URxvt*keysym.End: \033[4~
 ! XTerm class
 XTerm*faceName: Ubuntu Mono
 XTerm*faceSize: 11
-XTerm*termName: xterm-color
+XTerm*termName: xterm-256color
 XTerm*boldMode: false
 
 ! XTerm scheme - base
@@ -64,7 +64,7 @@ URxvt*scrollstyle: plain
 URxvt*scrollBar_floating: true
 URxvt*scrollBar_right: true
 URxvt*scrollColor: #202020
-URxvt*termName: xterm
+URxvt*termName: xterm-256color
 URxvt*saveLines: 8192
 URxvt*internalBorder: 20
 URxvt*urgentOnBell: true
