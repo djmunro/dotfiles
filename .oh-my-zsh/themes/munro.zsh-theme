@@ -25,7 +25,7 @@ function timebook_prompt_info() {
 if [ "`hostname -s`" = "skylab" ]
 then
     ICON="❀ "
-elif [ "`hostname -s`" = "0x0539.org" ]
+elif [ "`hostname`" = "0x0539.org" ]
 then
     ICON="➜ "
 elif [ "`hostname -s`" = "munro-desktop" ]
@@ -46,8 +46,14 @@ function scm_prompt_info() {
     fi
 }
 
-PROMPT='%{$fg_bold[magenta]%}$ICON%n %{$fg[yellow]%}%~ $(scm_prompt_info)
+if [ "$HOME" = "/root" ]
+then
+    PROMPT='%{$fg_bold[red]%}$ICON%n %{$fg[red]%}%~ $(scm_prompt_info)
+%{$fg_bold[red]%}$ICON%{$reset_color%}'
+else
+    PROMPT='%{$fg_bold[magenta]%}$ICON%n %{$fg[yellow]%}%~ $(scm_prompt_info)
 %{$fg_bold[magenta]%}$ICON%{$reset_color%}'
+fi
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
