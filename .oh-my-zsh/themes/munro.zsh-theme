@@ -25,14 +25,15 @@ function timebook_prompt_info() {
 if [ "`hostname -s`" = "skylab" ]
 then
     ICON="❀ "
-elif [ "`hostname -s`" = "ds" ]
+elif [ "`hostname -s`" = "0x0539.org" ]
 then
-    ICON="✱ "
+    ICON="➜ "
 elif [ "`hostname -s`" = "munro-desktop" ]
 then
     ICON="✲ "
-else
-    ICON="➜ "
+elif [ "`hostname -s`" = "ryan-lappy" ]
+then
+    ICON="✱ "
 fi
 
 function scm_prompt_info() {
