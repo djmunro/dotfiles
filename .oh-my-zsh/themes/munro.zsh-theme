@@ -34,6 +34,9 @@ then
 elif [ "`hostname -s`" = "ryan-lappy" ]
 then
     ICON="✱ "
+elif [ "`hostname`" = "foobar" ]
+then
+    ICON="✱ "
 fi
 
 function scm_prompt_info() {
