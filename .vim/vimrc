@@ -87,10 +87,10 @@ nnoremap <F2> :CommandTBuffer<CR>
 "nnoremap <TAB> :tabnext<CR>
 "nnoremap <S-TAB> :tabprevious<CR>
 
-"" Switch to Ibeam in insert mode
-if has("autocmd")
-  au InsertEnter * silent execute "!echo -ne '\033]777;Cs;3\007'"
-  au InsertLeave * silent execute "!echo -ne '\033]777;Cs;1\007'"
+"" Underline cursor in insert mode
+if &term =~ "xterm"
+    let &t_SI = "\<Esc>]777;Cs;3\x7"
+    let &t_EI = "\<Esc>]777;Cs;1\x7"
 endif
 
 " Syntax detection
