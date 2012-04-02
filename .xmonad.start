@@ -3,8 +3,12 @@
 xcompgr
 xmodmap $HOME/.Xmodmap
 xrdb -load $HOME/.Xdefaults
+
 # Set up icon tray
-trayer --SetDockType true --SetPartialStrut true --align right --alpha 0 --distance 459 --distancefrom right --edge top --expand true --height 20 --tint 0x111111 --transparent true --width 5 & 
+trayer --edge top --align center --SetDockType true --SetPartialStrut true \
+       --height 20 --widthtype request --transparent true --alpha 255 \
+       --tint 0x000000 &
+
 
 if [ -x /usr/bin/nm-applet ] ; then
    nm-applet --sm-disable &
