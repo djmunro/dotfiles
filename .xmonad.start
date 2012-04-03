@@ -1,5 +1,8 @@
 #!/bin/bash
 
+autocutsel -fork &
+autocutsel -selection PRIMARY -fork &
+
 xcompgr
 xmodmap $HOME/.Xmodmap
 xrdb -load $HOME/.Xdefaults
