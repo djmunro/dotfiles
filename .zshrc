@@ -99,3 +99,6 @@ bindkey "\eOH" beginning-of-line
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
 bindkey "\e[3~" delete-char # Del
+
+# Disable F10 key
+bindkey -s '[21~' ''

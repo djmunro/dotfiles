@@ -86,6 +86,9 @@ nnoremap <F2> :CommandTBuffer<CR>
 "nnoremap <gT> :tabNext<CR>
 "nnoremap <TAB> :tabnext<CR>
 "nnoremap <S-TAB> :tabprevious<CR>
+" Disable keys
+inoremap <F10> <Nop>
+nnoremap <F10> <Nop>
 
 "" Underline cursor in insert mode
 if &term =~ "xterm"
@@ -136,6 +139,7 @@ Bundle 'node.js'
 Bundle 'jslint.vim'
 " Highlight bad code
 Bundle 'Syntastic'
+Bundle 'dbext.vim'
 
 "" Enable plugins
 filetype plugin indent on
