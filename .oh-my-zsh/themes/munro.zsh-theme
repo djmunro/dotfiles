@@ -34,7 +34,7 @@ then
 elif [ "`hostname -s`" = "ryan-lappy" ]
 then
     ICON="✱ "
-elif [ "`hostname`" = "foobar" ]
+elif [ "`hostname`" = "beefbud" ]
 then
     ICON="✱ "
 fi
