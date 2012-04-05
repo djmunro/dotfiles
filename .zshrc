@@ -46,7 +46,6 @@ fi
 
 if [ -f "$HOME/.nvm/nvm.sh" ]; then
     source ~/.nvm/nvm.sh
-    export PATH="`npm bin`:$PATH"
 fi
 
 if [ -f "$HOME/.localrc" ]; then
@@ -61,7 +60,8 @@ setfontsize () {
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git django deb node npm pip redis-cli nyan mercurial)
+#plugins=(git django deb node npm pip redis-cli nyan mercurial)
+plugins=(git mercurial)
 
 source $ZSH/oh-my-zsh.sh
 

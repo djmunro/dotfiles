@@ -22,22 +22,12 @@ function timebook_prompt_info() {
 
 }
 
-if [ "`hostname -s`" = "skylab" ]
-then
-    ICON="❀ "
-elif [ "`hostname`" = "0x0539.org" ]
-then
-    ICON="➜ "
-elif [ "`hostname -s`" = "munro-desktop" ]
-then
-    ICON="✲ "
-elif [ "`hostname -s`" = "ryan-lappy" ]
-then
-    ICON="✱ "
-elif [ "`hostname`" = "beefbud" ]
-then
-    ICON="✱ "
-fi
+case "`hostname`" in
+"skylab.org")    ICON="❀ " ;;
+"0x0539.org")    ICON="➜ " ;;
+"munro-desktop") ICON="✲ " ;;
+*)               ICON="✱ " ;;
+esac
 
 function scm_prompt_info() {
     HG=$(hg_prompt_info)
