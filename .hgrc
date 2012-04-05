@@ -23,3 +23,6 @@ transplant =
 
 [merge-tools]
 meld.args = $base $local $other
+
+[alias]
+heads = heads -t
