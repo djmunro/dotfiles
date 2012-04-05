@@ -67,8 +67,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 zstyle ':completion:*' accept-exact '*(N)'
-zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path ~/.zsh/cache
 
 # Bindkeys!
 bindkey "\e[1~" beginning-of-line # Home
