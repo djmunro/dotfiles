@@ -117,7 +117,7 @@ let g:snips_author = 'Ryan Munro'
 let g:github_user = 'munro'
 let g:github_token = $GITHUB_TOKEN
 " Syntastic
-let g:syntastic_javascript_jslint_conf = "--undef --sloppy --vars"
+let g:syntastic_javascript_jslint_conf = "--undef --sloppy --vars --nomen"
 
 "" Enable vundle
 set rtp+=~/.vim/vundle/ 
