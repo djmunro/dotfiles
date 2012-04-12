@@ -2,5 +2,3 @@ defutf8 on
 altscreen on
 vbell off
 startup_message off
-hardstatus alwayslastline
-hardstatus string '%{= mK}%-Lw%{= KW}%50>%n%f* %t%{= mK}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
