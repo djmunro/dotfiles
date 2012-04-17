@@ -39,10 +39,10 @@ set title titlestring=%t%(\ %M%)%(\ (%{expand(\"%:p:h\")})%)%(\ %a%)\ -\ %{v:ser
 " Set temp swp directory
 set dir=$HOME/.vim/tmp
 " Search settings
-set shiftround
-set autoindent
-set incsearch
-set ignorecase
+"set shiftround
+"set autoindent
+"set incsearch
+"set ignorecase
 
 "" Colors
 set t_Co=256
@@ -86,9 +86,6 @@ nnoremap <F2> :CommandTBuffer<CR>
 "nnoremap <gT> :tabNext<CR>
 "nnoremap <TAB> :tabnext<CR>
 "nnoremap <S-TAB> :tabprevious<CR>
-" Disable keys
-inoremap <F10> <Nop>
-nnoremap <F10> <Nop>
 
 "" Underline cursor in insert mode
 if &term =~ "xterm"
@@ -116,8 +113,6 @@ let g:snips_author = 'Ryan Munro'
 " Gist
 let g:github_user = 'munro'
 let g:github_token = $GITHUB_TOKEN
-" Syntastic
-let g:syntastic_javascript_jslint_conf = "--undef --sloppy --vars --nomen"
 
 "" Enable vundle
 set rtp+=~/.vim/vundle/ 
@@ -135,11 +130,9 @@ Bundle 'Gist.vim'
 "" Javascript Bundles
 " Autodectect nodejs files
 Bundle 'node.js'
-" Detect unsafe JS
-Bundle 'jslint.vim'
 " Highlight bad code
+let g:syntastic_javascript_jslint_conf = ""
 Bundle 'Syntastic'
-Bundle 'dbext.vim'
 
 "" Enable plugins
 filetype plugin indent on
